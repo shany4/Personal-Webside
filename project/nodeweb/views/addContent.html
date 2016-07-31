@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030) admin/index -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Management</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap dialog-->
+    <link rel="stylesheet" href="css/bootstrap-dialog.min.css">
+    <link rel="stylesheet" href="css/messenger.css">
+    <link rel="stylesheet" href="css/messenger-theme-flat.css">
+    <link rel="stylesheet" href=" assets/plugins/chosen_v1.2.0/chosen.css">
+    <!-- Fonts from Font Awsome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- CSS Animate-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Custom styles for this theme-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Feature detection-->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--if lt IE 9
+    script(src='/assets/server/js/html5shiv.js')
+    script(src='/assets/server/js/respond.min.js')
+    -->
+  <body>
+    <section id="container">
+      <header id="header">
+        <!-- logo start-->
+        <div class="brand"><img  alt="shan"  src="img/logo_shan2.png"  /><a class="logo">Management
+            </a></div>
+        <!-- logo end-->
+        <div class="toggle-navigation toggle-left">
+          <button id="toggle-left" type="button" data-toggle="tooltip" data-placement="right" title="" class="btn btn-default" data-original-title="Pack Up"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="user-nav">
+          <ul>
+            <!--li.dropdown.messages
+            span#new-messages.badge.badge-danager.animated.bounceIn 5
+            button#toggle-mail.btn.btn-default.dropdown-toggle.options(type='button', data-toggle='dropdown')
+                i.fa.fa-envelope
+            ul.dropdown-menu.alert.animated.fadeInDown
+                li
+                    h1
+                        | You have 
+                        strong 5
+                        |  new messages
+                li
+                    a(href='index.html#')
+                        .profile-photo
+                            img.img-circle(src='/assets/server/img/avatar.gif', alt='')
+                        .message-info
+                            span.sender James Bagian
+                            span.time 30 mins
+                            .message-content Lorem ipsum dolor sit amet, elit rutrum felis sed erat augue fusce...
+                li
+                    a(href='index.html#')
+                        .profile-photo
+                            img.img-circle(src='/assets/server/img/avatar1.gif', alt='')
+                        .message-info
+                            span.sender Jeffrey Ashby
+                            span.time 2 hour
+                            .message-content hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...
+                li
+                    a(href='index.html#')
+                        .profile-photo
+                            img.img-circle(src='/assets/server/img/avatar2.gif', alt='')
+                        .message-info
+                            span.sender John Douey
+                            span.time 3 hours
+                            .message-content Penatibus suspendisse sit pellentesque eu accumsan condimentum nec...
+                li
+                    a(href='index.html#')
+                        .profile-photo
+                            img.img-circle(src='/assets/server/img/avatar3.gif', alt='')
+                        .message-info
+                            span.sender Ellen Baker
+                            span.time 7 hours
+                            .message-content Sem dapibus in, orci bibendum faucibus tellus, justo arcu...
+                li
+                    a(href='index.html#')
+                        .profile-photo
+                            img.img-circle(src='/assets/server/img/avatar4.gif', alt='')
+                        .message-info
+                            span.sender Ivan Bella
+                            span.time 6 hours
+                            .message-content Curabitur metus faucibus sapien elit, ante molestie sapien...
+                li
+                    a(href='index.html#')
+                        | Check all messages 
+                        i.fa.fa-angle-right
+            -->
+            <li class="profile-photo"><img src="js/head.png" alt="" class="img-circle">
+            </li>
+            <li class="dropdown settings"><a data-toggle="dropdown" href="" class="dropdown-toggle">Test</a>
+              <ul class="dropdown-menu">
+                <li><a href=" admin/me"><i class="fa fa-user"></i> Personal Info</a></li>
+                <li><a href=" /adminlogout"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- sidebar left start-->
+      <aside class="sidebar">
+        <div id="leftside-navigation" class="nano">
+          <ul class="nano-content">
+            <li class="active"><a href="/admin"><i class="fa fa-dashboard"></i><span>Home Page</span></a></li>
+            <li class="sub-menu"><a href="javascript:void(0);"><i class="fa fa-folder-open"></i><span>Poster</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul>
+                <li><a href="/poster">Poster List</a></li>
+              </ul>
+            
+            <li class="sub-menu"><a href="javascript:void(0);"><i class="fa fa-file-text"></i><span>Content</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul>
+                <li><a href="/content">Content List</a></li>
+                <li><a href="/addContent">Add Content</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a href="javascript:void(0);"><i class="fa fa-th"></i><span>Classify</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul>
+                <li><a href="/classify">Classify List</a></li>
+                <li><a href="/addClassify">Add Content</a></li>
+              </ul>
+            </li>
+
+            <li class="sub-menu"><a href="javascript:void(0);"><i class="fa fa-unlock-alt"></i><span>Skill</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul>
+                <li><a href="/skill">Skill</a></li>
+              </ul>
+            </li>
+
+              
+            <li><a href="/email">Email</a></li>
+
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- sidebar left end-->
+      <!-- main content start-->
+      <section class="main-content-wrapper">
+        <section id="main-content">
+          <div class="row">
+            <div class="col-md-12">
+              <form action ="addContentfunction" method = "POST">
+                <div class="form-group">
+                  <label>Title</label>
+                  <input name="title" class="form-control" value = "">
+                </div>
+                <div class="form-group">
+                  <label>Classify</label>
+                  <select name="classify" class="form-control input-sm">
+                  	<%for (var i in classifylist) {%>
+                    <option value="<%=classifylist[i].classifyname%>"><%=classifylist[i].classifyname%></option>
+                    <%}%>
+                   
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>URL</label>
+                  <div id="" >
+                    <td><input type = "text" id = "url" name = "url" value = ""/> </td>
+
+                  </div>
+                  <label>Website</label>
+                  <div id="" >
+                    <td><input type = "text" id = "website" name = "website" value = ""/> </td>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Content</label>
+                  <textarea name="content" rows="20" class="form-control" value = ""></textarea>
+                </div>
+
+                <input type="hidden" name="_csrf" value="">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        		
+        </section>
+      </section>
+      <!-- main content end-->
+    </section>
+    <!-- Global JS-->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-dialog.min.js"></script>
+    <script src="js/messenger.min.js"></script>
+    <script src="js/messenger-theme-future.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/application.js"></script>
+    <!-- Load these page level functions-->
+    <script></script>
+    <!--script.
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    
+    
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3a258fabccde554fc44cba951692bdde' type='text/javascript'%3E%3C/script%3E"));
+    -->
+  
+</body></html>

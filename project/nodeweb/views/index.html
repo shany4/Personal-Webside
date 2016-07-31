@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no"/>
+<meta name="description" content="Responsive One Page Vcard Portfolio or Resume Template"/>
+<meta name="author" content="TheThemeLab">
+<title>YING SHAN Portfolio</title>
+<!-- Favicons -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- List of Stylesheet -->
+<link type='text/css' href="css/normalize.css" rel="stylesheet">
+<link type='text/css' href="css/bootstrap.min.css" rel="stylesheet">
+<link type='text/css' href="css/font-awesome.min.css" rel="stylesheet">
+<link type='text/css' href="css/style.css" rel="stylesheet">
+<link type='text/css' href="css/style-responsive.css" rel="stylesheet">
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+<!-- END SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+</head>
+<body>
+
+
+<!-- Navbar -->
+<div class="navbar navbar-transparent navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>			
+			<a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('logo','','images/logo_shan2.png')" >
+			<img id="logo" class="logo" alt="shan"  src="images/logo_shan.png"  /></a>
+		</div>
+		<nav id="my-nav" class="navbar-collapse collapse" role="navigation">
+	
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="#home">Home</a>
+			</li>
+			<li>
+			<a href="#portfolio">Works</a>
+			</li>
+			<li>
+			<a href="#about">About</a>
+			</li>
+			<li>
+			<a href="#experience">Resume</a>
+			</li>
+			<li>
+			<a href="#contact">Contact</a>
+			</li>
+		</ul>
+		</nav>
+		<!--/.navbar-collapse -->
+	</div>
+</div>
+<!-- End Navbar -->      
+
+<!-- Home Section -->
+<section id="home">
+	<!--
+	#################################
+		- THEMEPUNCH BANNER -
+	#################################
+	-->
+	<div class="tp-banner-container">
+		<div class="tp-banner" >
+		
+			<ul>	<!-- SLIDE  -->
+			
+				<!-- SLIDE  -->
+	<li data-transition="fade" data-slotamount="7" data-masterspeed="600" data-saveperformance="on"  data-title="Slide 2">
+		<!-- MAIN IMAGE -->
+		<img src="images/banner.png" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption tp-resizeme sft sub-heading"
+		  data-x="center" data-hoffset="0"
+			data-y="center" data-voffset="-50"
+			data-speed="300"
+			data-start="1200"
+			data-easing="Power1.easeInOut"
+  		data-endeasing="Power1.easeInOut"
+			data-captionhidden="off"
+			data-endspeed="300"
+			style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">Creative - Professional - Passionate
+		</div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption box-title tp-fade sfb tp-resizeme"
+			data-x="center" data-hoffset="0"
+			data-y="center" data-voffset="30"
+			data-speed="300"
+			data-start="1300"
+			data-easing="Power1.easeInOut"
+  		data-endeasing="Power1.easeInOut"
+			data-captionhidden="off"
+			data-endspeed="300"
+			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Multimedia Designer
+		</div>
+		
+			</li>
+
+			
+			<%for (var i in contentList) {
+				if (contentList[i].contentstate == "1") {
+			%>
+	<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Slide 1">
+		<!-- MAIN IMAGE -->
+	    <img src="<%=contentList[i].contenturl%>" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption tp-resizeme sft sub-heading"
+			data-x="center" data-hoffset="0"
+			data-y="center" data-voffset="-50"
+			data-speed="300"
+			data-start="1200"
+			data-easing="Power1.easeInOut"
+  		data-endeasing="Power1.easeInOut"
+			data-captionhidden="off"
+			data-endspeed="300"
+			style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">Welcome to my site
+		</div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption box-title sfb tp-fade tp-resizeme"
+			data-x="center" data-hoffset="0"
+			data-y="center" data-voffset="30"
+			data-speed="300"
+			data-start="1300"
+			data-easing="Power1.easeInOut"
+  		data-endeasing="Power1.easeInOut"
+			data-captionhidden="off"
+			data-endspeed="300"
+      style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Ying Shan
+		</div>
+
+	</li>
+	<!-- SLIDE  -->
+	<%}}%>
+</ul>
+<div class="tp-bannertimer"></div>	</div>
+</div>	
+<!-- END REVOLUTION SLIDER -->
+
+</section>
+<!-- Home Section -->
+
+
+
+<!-- Portfolio Section -->
+
+<section id="portfolio" class="section-content text-center padding">
+<div class="container">
+	<div class="margin"></div>
+	<h1 class="title">MY WORK</h1>
+	<hr class="star" />
+  <br />
+<div class="portfolio-top">
+</div>
+<div id="portfolio-wrap" tabindex="1">
+	<div id="portfolio-page">
+		<div id="portfolio-content">
+			  <div class="container">
+        <div class="row">
+				<div id="protfolio-control">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<a href="#" id="prev-project" title="Previous Project"><i class="fa fa-arrow-left"></i></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+							<a href="#" id="close-project" title="Close Project"><i class="fa fa-times"></i></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-right">
+							<a href="#" id="next-project" title="Next Project"><i class="fa fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- End #protfolio-control -->
+				<!-- Ajax will load into here -->
+				<div id="portfolio-ajax">
+				</div>
+				<!-- End #portfolio-ajax -->
+				<!-- End Ajax -->
+      </div>
+      </div>  
+		</div>
+		<!-- End #portfolio-content -->
+	</div>
+	<!-- End #portfolio-page -->
+</div>
+<!-- End #portfolio-wrap -->
+<div id="portfolio-filter">
+		<div class="row text-center">
+			<div class="col-md-12">
+				<!--portfolio category-->
+				<ul class="portfolio-filter-list white">
+					<li>
+					<a class="active" href="#" data-cat="*">ALL</a>
+					</li>
+					<% for (var i in classifyList) {%>
+					<li>
+					<a href="#" data-cat="<%=classifyList[i].classifyname%>"><%=classifyList[i].classifyname%></a>
+					</li>
+					<%}%>
+					
+				</ul>
+				
+				<!--End portfolio category-->
+			</div>
+			<!-- End .col-md-12 -->
+		</div>
+		<!-- End .row -->
+</div>
+</div>
+<!-- End .container -->
+
+<!-- End #portfolio-filter -->
+<div class="container">
+	<div class="row">
+   <div class="col-md-12">
+		<div id="portfolio-items" class="portfolio-items item_fade_in">
+			<% for (var i in contentList) {%>
+		
+			<article class="<%=contentList[i].contentclassify%>">
+		
+			<a href="<%=contentList[i].contentwebsite%>">
+			<img alt="taste" src="<%=contentList[i].contenturl%>" />
+			<div class="overlay">
+				<div class="item-info">
+					<%for (var j in classifyList) {
+						if (classifyList[j].classifyname == contentList[i].contentclassify){%>
+					<i class="<%=classifyList[j].classifylogo%>"></i>
+					<%}
+					}%>
+					<h3><%=contentList[i].contenttitle%></h3>
+					<span><%=contentList[i].contentclassify%></span>
+				</div>
+			</div>
+			<!-- End .overlay -->
+			</a>		
+			</article>
+			<%}%>
+		</div>
+		<!-- End #portfolio-items.portfolio-items -->
+   </div> 
+	</div>
+</div>
+</section>
+<!-- End Portfolio Section -->
+
+
+<!-- About Section -->
+
+<section id="about" class="section-content  padding">
+<div class="container">
+	<div class="margin"></div>
+	<h1 class="title text-center ">ABOUT ME</h1>
+	<hr class="star" />
+	<div class="margin"></div>
+  	<br />
+	<div class="row">
+
+		<div class="col-md-4 ">	
+		<p><p>
+      <!-- some information list -->
+            <ul class="fa-ul">
+				<li><strong>Camera</strong> : Canon 5DIII/7D / GoPro H4</li>
+				<li><strong>System</strong> : Windows / Mac Os / Linux</li>
+				<li><strong>Language</strong> : English / Mandarin</li>
+			</ul>
+			<!-- ./some information list -->
+       <!-- some number facts -->
+
+			<div class="number-counters text-center new-line">
+			<h4>SERVICERS 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			</h4>
+				<div class="counters-item">
+					<i class="fa fa-camera-retro "></i>
+					<!-- Set Your Number here. i,e. data-to="56" -->
+					<p>
+						Shoot Photo
+					</p>
+				</div>
+				<div class="counters-item">
+					<i class="fa fa-file-video-o "></i>
+					<!-- Set Your Number here. i,e. data-to="56" -->
+					<p>
+						Video Project
+					</p>
+				</div>
+				<div class="counters-item">
+					<i class="fa fa-cube "></i>
+					<!-- Set Your Number here. i,e. data-to="56" -->
+					<p>
+						3D Project
+					</p>
+				</div>
+				<div class="counters-item">
+					<i class="fa fa-html5 "></i>
+					<!-- Set Your Number here. i,e. data-to="56" -->
+					<p>
+						Web Design
+					</p>
+				</div>
+				
+				<div class="counters-item">
+					<i class="fa fa-pencil-square-o"></i>
+					<!-- Set Your Number here. i,e. data-to="56" -->
+					<p>
+						UI/UE Design
+					</p>
+				</div>
+			</div>
+      <!-- ./some number facts -->
+		</div>
+    <!-- some text about yourself -->
+		<div class="col-md-4 item_top">
+			<p class="quoteline">
+				It is very easy to be different, but very difficult to be better
+			</p>
+			<p>
+				Hello, I'm a MultiMedia Designer from Toronto, Canada. I hold a BA of Multimedia from the McMaster University in Canada, and currently doing my MSc of Creative technology at Bristol University in UK
+			</p>
+			<p>I am a junior multimedia nerd who is highly motivated to secure a job in the media industry. Fast learner and hard worker with a keen eye for detail and strong command of camera and editing techniques. Passion for the art of visual storytelling and culture study, with filmmaking, animation and graphic design talents recognized through peer-review and multiple showings. Also enjoy shooting pictures, creative coding, web development and UI/UE design.			</p>
+      <p class="text-right">
+      <img src="images/signature.png" alt="signature" />
+      </p>
+		</div>
+    <!-- ./some text about yourself -->
+		<div class="col-md-4 text-center item_bottom">
+		
+			<div onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('portrait','','images/ying.svg')">
+	        <img id= "portrait" class= "portrait img-center img-responsive" alt="me" src="images/ying2.svg" /> 
+	        </div>
+			<!-- YOUR PHOTO -->
+			<div class="name-title">
+				<h2>Ying Shan</h2>
+				<!-- Your Name -->
+				<h5>Multimeida Designer</h5>
+				<!-- Your Designation -->
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="container">
+
+    <center><h1>MY SKILL</h1></center>
+  	<div class="row text-center item_bottom">
+		
+		
+		<% 
+			for (var i in skillList) {
+				if (i <=5) {
+			
+		%>
+		
+		<div class="col-md-2">
+		<div class="chart" data-percent="<%=skillList[i].skillval%>">
+			<span class="percent"><%=skillList[i].skillval%></span>
+			<h4><%=skillList[i].skillname%></h4>
+		</div>
+		</div>		
+		
+		<%
+			} else break;
+		}%>
+	</div>
+	
+	<div class="row new-line item_bottom">
+	
+		<div class="col-md-6">
+			<ul class="skillBar">
+			<%
+		for (var i in skillList) {
+			if (i > 5) {
+				if (i % 2 == 0) {
+		
+	%>
+				<li>
+				<div class="skillBg">
+					<span data-width="<%=skillList[i].skillval%>"><strong><%=skillList[i].skillname%> <%=skillList[i].skillval%>%</strong></span>
+				</div>
+				</li>
+				<%}
+				}
+				}%>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<ul class="skillBar">
+	<%
+		for (var i in skillList) {
+			if (i > 5) {
+				if (i % 2 == 1) {
+		
+	%>
+				<li>
+				<div class="skillBg">
+					<span data-width="<%=skillList[i].skillval%>"><strong><%=skillList[i].skillname%> <%=skillList[i].skillval%>%</strong></span>
+				</div>
+				</li>
+
+				<%}
+				}
+				}%>
+			</ul>
+		</div>
+	</div>
+	<!-- skills end -->
+</div>
+</section>
+<!-- End About Section -->
+
+
+<!-- Skill Section -->
+
+
+<!-- End Skill Section -->  
+
+
+<!--  resume section   -->
+<section id="experience" class="text-center padding">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+		<div class="margin"></div>
+			<h1 class="title">MY RESUME</h1>
+			<hr class="star" />
+			<div class="margin"></div>
+			<a href= "https://www.dropbox.com/s/jsb7uizrv63eqfp/new%20resume.doc?dl=0"><h3>Work Experience</h3></a>
+		</div>
+    <p>    
+		&nbsp; </br> &nbsp; </br> &nbsp;
+    </p>
+	</div>
+	</div>
+<!--  container  -->
+</section>
+
+<!--  contact section  -->
+<section id="contact" class="text-center padding">
+	<div class="container">
+	 <div class="margin"></div>
+	 <h1 class="title">CONTACT ME</h1>
+	<hr class="star" />
+	</br >	
+
+	<div class="row">
+	
+		<div class="social-media">
+		<br/>
+		<ul class="socials list-inline">
+			<li>
+				<a href="https://www.linkedin.com/in/yingshan" class="btn-social"><i class="fa fa-linkedin-square"></i></a>
+			</li>
+			<li>
+				<a href="https://instagram.com/sying0122/" class="btn-social"><i class="fa fa-instagram"></i></a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/druidshan" class="btn-social"><i class="fa fa-facebook-square"></i></a>
+			</li>
+			<li>
+				<a href="https://vimeo.com/user7267133" class="btn-social"><i class="fa fa-vimeo-square"></i></a>
+			</li>
+			<li>
+				<a href="https://www.flickr.com/photos/27507174@N03/" class="btn-social"><i class="fa fa-flickr"></i></a>
+			</li>
+		</ul>
+	</div>
+<!--  social-media -->
+	
+	</br >
+<!--    contact form goes here   -->
+	<div class="contact-form col-md-7 col-md-offset-3">
+		<form class="form-horizontal center" role="form" action = "/sendMail" method ="POST" onsubmit = "return check(this)">
+			<div class="form-group has-success">
+					<div class="col-sm-10">
+						<input type="text" class="form-control input-lg" id="Name" name ="Name" placeholder="Name"/>
+						<span id="Names"></span>
+					</div>
+			</div>
+			<div class="form-group has-success">
+					<div class="col-sm-10">
+						<input type="text" class="form-control input-lg" id="Email" name = "Email" placeholder="Email"/>
+						<span id="Emails"></span>
+					</div>
+			</div>
+			<div class="form-group has-success">
+					<div class="col-sm-10">
+					
+						<textarea class="form-control input-lg" type = "text" rows="5" id  = "Message" name = "Message" placeholder="Message"></textarea>
+						<span id="Messages"></span>
+					</div>
+			</div>
+
+
+		   <button type="submit" class="btn btn-primary col-sm-10">Send</button>
+
+		</form>
+	</div>
+<!--  contact-form  -->
+     
+	</div>	</br >	</br >
+<!-- row -->
+	</div>
+<!-- container  -->
+</section>
+
+
+
+<!-- Google maps -->
+
+<div id="map_canvas" class="item_fade_in" data-widgetkit="googlemaps" data-options='{"title":"McMaster","location":"Westminster, London, UK","lat":"43.259885666026555","lng":"-79.9196147672119","icon":"red-dot","popup":1,"text":"","mainIcon":"red-dot","style":"default","width":"auto","height":220,"mapTypeId":"roadmap","zoom":15,"mapCtrl":2,"typeCtrl":0,"directions":0,"unitSystem":0,"clusterMarker":0,"styler_invert_lightness":1,"styler_hue":"#990033","styler_saturation":0,"styler_lightness":20,"styler_gamma":1,"adresses":[]}'></div>	
+
+</div>
+<!-- End Google maps -->
+
+<footer class="text-center">
+<!-- Footer Text -->
+	<div class="container item_top">
+	<a href="#" id="back-top">
+    <img class="footer-logo" src="images/logo.png" alt="footer logo"><br /> </a>
+		<p>Copyright &#169; - Ying Shan -</p>
+	</div>
+<!-- End Footer Text -->
+</footer>
+
+
+
+<!-- Js Library -->
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery-countTo.js"></script>
+<script type="text/javascript" src="js/easyPieChart.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/gmap-settings.js"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<!-- END SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="js/script.js"></script>
+<!-- Js Library -->
+</body>
+</html>
