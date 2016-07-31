@@ -1,5 +1,3 @@
-==copyright by Ying Shan==
-
 The system is created by node.js, express and mongodb.
 
 Run the server:
